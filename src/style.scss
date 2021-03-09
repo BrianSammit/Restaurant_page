@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../dist/img/bg_food.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #d80000;
+
+  #content {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-bottom: 0.1px solid hsl(0, 0%, 93%);
+      padding: 2rem;
+      height: 196px;
+      width: 100%;
+
+      h1 {
+        font-family: "Pacifico", cursive;
+        font-size: 3rem;
+        line-height: 38.4px;
+        color: white;
+      }
+    }
+
+    main {
+      padding: 20px;
+      margin: 40px;
+      width: 50%;
+      background-color: rgba(0, 0, 0, 0.8);
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        font-family: "Pacifico", cursive;
+        font-size: 2.5rem;
+        font-weight: 100;
+        color: white;
+      }
+
+      p {
+        font-family: "Times New Roman", Times, serif;
+        color: white;
+        font-size: 1rem;
+      }
+
+      img {
+        margin: 15px;
+        height: 20rem;
+        border-radius: 50%;
+      }
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 50px;
+
+      p {
+        font-family: "Times New Roman", Times, serif;
+        color: white;
+      }
+    }
+  }
+}
