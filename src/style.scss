@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(../dist/img/bg_food1.jpg);
+  background-image: url(../dist/img/bg-food.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,7 +85,8 @@ body {
       img {
         margin: 15px;
         height: 20rem;
-        border-radius: 50%;
+        border-radius: 5%;
+        border: solid 1px rgb(255, 255, 255);
       }
     }
 

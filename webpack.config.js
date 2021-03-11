@@ -1,13 +1,14 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './src/index.js',
+  mode: "production",
+  entry: "./src/index.js",
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: "./dist",
     port: 8080,
     hot: true,
   },
@@ -15,12 +16,12 @@ module.exports = {
     rules: [
       {
         test: /\.(scss|css)$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(jpg|png)$/,
         use: {
-          loader: 'url-loader',
+          loader: "url-loader",
         },
       },
     ],

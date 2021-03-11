@@ -1,56 +1,103 @@
-import './style.scss'
-import Menu from './menu'
+import "./style.scss";
+import loadHome from "./home";
+// import loadMenu from "./menu";
+// import loadContact from "./contact";
 
-const content = document.getElementById('content');
-const header = document.createElement('header');
-const h1 = document.createElement('h1')
-const nav = document.createElement("nav");
-const hh = document.createElement('button')
-const hm = document.createElement('button')
-const hc = document.createElement('button')
+function createHeader() {
+  const header = document.createElement("header");
+  header.className = "header";
 
-const main = document.createElement('main');
-const div = document.createElement('div')
-const h2 = document.createElement('h2')
-const p = document.createElement('p')
-const img = document.createElement('img')
-const p2 = document.createElement('p')
+  const h1 = document.createElement("h1");
+  h1.className = "restaurant-name";
+  h1.innerText = "My Restaurant";
 
-const footer = document.createElement('footer');
-const pf = document.createElement('p')
-const icong = document.createElement('i')
+  header.appendChild(h1);
+  header.appendChild(createNav());
 
+  return header;
+}
 
+function createNav() {
+  const nav = document.createElement("nav");
 
-h1.innerText = 'My Restaurant';
-hh.innerText = 'HOME'
-hm.innerText = ' MENU '
-hc.innerText = 'CONTACT'
-nav.className = 'nav'
-nav.appendChild(hh)
-nav.appendChild(hm)
-nav.appendChild(hc)
-header.className = 'header'
-header.appendChild(h1);
-header.appendChild(nav);
+  const hh = document.createElement("button");
+  hh.className = "button-nav";
+  hh.textContent = "Home";
+  hh.addEventListener("click", (e) => {
+    if (e.target.classList.contains("active")) return;
+    setActiveButton(hh);
+    loadHome();
+  });
 
-main.className = 'main'
-h2.innerText = 'Rapid Food'
-p.innerText = 'Happy Belly Happy Life'
-img.src ='/dist/img/sheff.jpg'
-p2.innerText = 'Get your favorite food and enjoy it'
-div.appendChild(h2)
-div.appendChild(p)
-div.appendChild(img)
-div.appendChild(p2)
-main.appendChild(div)
+  const hm = document.createElement("button");
+  hm.className = "button-nav";
+  hm.textContent = "Menu";
+  hm.addEventListener("click", (e) => {
+    if (e.target.classList.contains("active")) return;
+    setActiveButton(hm);
+    loadMenu();
+  });
 
-footer.className = 'footer'
-pf.innerText = 'Copyright © 2021 Brian '
-icong.className = 'fab fa-github'
-pf.appendChild(icong)
-footer.appendChild(pf)
+  const hc = document.createElement("button");
+  hc.className = "button-nav";
+  hc.textContent = "Contact";
+  hc.addEventListener("click", (e) => {
+    if (e.target.classList.contains("active")) return;
+    setActiveButton(hc);
+    loadContact();
+  });
 
-content.appendChild(header)
-content.appendChild(main)
-content.appendChild(footer)
+  nav.appendChild(hh);
+  nav.appendChild(hm);
+  nav.appendChild(hc);
+
+  return nav;
+}
+
+function setActiveButton(button) {
+  const buttons = document.querySelectorAll(".button-nav");
+
+  buttons.forEach((button) => {
+    if (button !== this) {
+      button.classList.remove("active");
+    }
+  });
+
+  button.classList.add("active");
+}
+
+function createMain() {
+  const main = document.createElement("main");
+  main.classList.add("main");
+  main.setAttribute("id", "main");
+  return main;
+}
+
+function createFooter() {
+  const footer = document.createElement("footer");
+  footer.className = "footer";
+
+  const pf = document.createElement("p");
+  pf.innerText = "Copyright © 2021 Brian ";
+
+  const icong = document.createElement("i");
+  icong.className = "fab fa-github";
+
+  pf.appendChild(icong);
+  footer.appendChild(pf);
+
+  return footer;
+}
+
+function initializeWebsite() {
+  const content = document.getElementById("content");
+
+  content.appendChild(createHeader());
+  content.appendChild(createMain());
+  content.appendChild(createFooter());
+
+  setActiveButton(document.querySelector(".button-nav"));
+  loadHome();
+}
+
+initializeWebsite();
