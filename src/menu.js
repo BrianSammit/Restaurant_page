@@ -1,136 +1,122 @@
 function createMenu() {
-  const menu = document.createElement("div");
-  menu.className = "menu";
+  const menu = document.createElement('div');
+  menu.className = 'menu';
 
-  const hmeat = document.createElement("h2");
-  hmeat.innerText = "Meats";
+  const hMeat = document.createElement('h2');
+  hMeat.innerText = 'Meats';
 
-  const hdrinks = document.createElement("h2");
-  hdrinks.innerText = "Drinks";
+  const hDrinks = document.createElement('h2');
+  hDrinks.innerText = 'Drinks';
 
-  const bmeat = document.createElement("div");
-  bmeat.className = "body-menu";
+  const bMeat = document.createElement('div');
+  bMeat.className = 'body-menu';
 
-  const bdrinks = document.createElement("div");
-  bdrinks.className = "body-menu";
+  const bDrinks = document.createElement('div');
+  bDrinks.className = 'body-menu';
 
-  const bmeat_1 = document.createElement("div");
-  bmeat.className = "body-menu";
+  const bMeat1 = document.createElement('div');
+  const bMeat2 = document.createElement('div');
+  const bMeat3 = document.createElement('div');
+  const bMeat4 = document.createElement('div');
 
-  const bmeat_2 = document.createElement("div");
-  bmeat.className = "body-menu";
+  const bDrinks1 = document.createElement('div');
+  const bDrinks2 = document.createElement('div');
+  const bDrinks3 = document.createElement('div');
+  const bDrinks4 = document.createElement('div');
 
-  const bmeat_3 = document.createElement("div");
-  bmeat.className = "body-menu";
+  const img1 = document.createElement('img');
+  img1.src = 'img/1.jpg';
+  img1.alt = 'menu';
 
-  const bmeat_4 = document.createElement("div");
-  bmeat.className = "body-menu";
+  const img2 = document.createElement('img');
+  img2.src = 'img/2.jpg';
+  img2.alt = 'menu';
 
-  const bdrinks_1 = document.createElement("div");
-  bdrinks_1.className = "body-menu";
+  const img3 = document.createElement('img');
+  img3.src = 'img/3.jpg';
+  img3.alt = 'menu';
 
-  const bdrinks_2 = document.createElement("div");
-  bdrinks_2.className = "body-menu";
+  const img4 = document.createElement('img');
+  img4.src = 'img/4.jpg';
+  img4.alt = 'menu';
 
-  const bdrinks_3 = document.createElement("div");
-  bdrinks_3.className = "body-menu";
+  const imgd1 = document.createElement('img');
+  imgd1.src = 'img/d1.jpg';
+  imgd1.alt = 'menu';
 
-  const bdrinks_4 = document.createElement("div");
-  bdrinks_4.className = "body-menu";
+  const imgd2 = document.createElement('img');
+  imgd2.src = 'img/d2.jpg';
+  imgd2.alt = 'menu';
 
-  const img_1 = document.createElement("img");
-  img_1.src = "img/1.jpg";
-  img_1.alt = "menu";
+  const imgd3 = document.createElement('img');
+  imgd3.src = 'img/d3.jpg';
+  imgd3.alt = 'menu';
 
-  const img_2 = document.createElement("img");
-  img_2.src = "img/2.jpg";
-  img_2.alt = "menu";
+  const imgd4 = document.createElement('img');
+  imgd4.src = 'img/d4.jpg';
+  imgd4.alt = 'menu';
 
-  const img_3 = document.createElement("img");
-  img_3.src = "img/3.jpg";
-  img_3.alt = "menu";
+  const imgInfo1 = document.createElement('h3');
+  imgInfo1.innerText = 'Meat 1';
 
-  const img_4 = document.createElement("img");
-  img_4.src = "img/4.jpg";
-  img_4.alt = "menu";
+  const imgInfo2 = document.createElement('h3');
+  imgInfo2.innerText = 'Meat 2';
 
-  const imgd_1 = document.createElement("img");
-  imgd_1.src = "img/d1.jpg";
-  imgd_1.alt = "menu";
+  const imgInfo3 = document.createElement('h3');
+  imgInfo3.innerText = 'Meat 3';
 
-  const imgd_2 = document.createElement("img");
-  imgd_2.src = "img/d2.jpg";
-  imgd_2.alt = "menu";
+  const imgInfo4 = document.createElement('h3');
+  imgInfo4.innerText = 'Meat 4';
 
-  const imgd_3 = document.createElement("img");
-  imgd_3.src = "img/d3.jpg";
-  imgd_3.alt = "menu";
+  const imgdInfo1 = document.createElement('h3');
+  imgdInfo1.innerText = 'Drinks 1';
 
-  const imgd_4 = document.createElement("img");
-  imgd_4.src = "img/d4.jpg";
-  imgd_4.alt = "menu";
+  const imgdInfo2 = document.createElement('h3');
+  imgdInfo2.innerText = 'Drinks 2';
 
-  const img_info_1 = document.createElement("h3");
-  img_info_1.innerText = "Meat 1";
+  const imgdInfo3 = document.createElement('h3');
+  imgdInfo3.innerText = 'Drinks 3';
 
-  const img_info_2 = document.createElement("h3");
-  img_info_2.innerText = "Meat 2";
+  const imgdInfo4 = document.createElement('h3');
+  imgdInfo4.innerText = 'Drinks 4';
 
-  const img_info_3 = document.createElement("h3");
-  img_info_3.innerText = "Meat 3";
+  bMeat1.appendChild(img1);
+  bMeat1.appendChild(imgInfo1);
+  bMeat2.appendChild(imgInfo2);
+  bMeat2.appendChild(img2);
+  bMeat3.appendChild(img3);
+  bMeat3.appendChild(imgInfo3);
+  bMeat4.appendChild(imgInfo4);
+  bMeat4.appendChild(img4);
+  bMeat.appendChild(bMeat1);
+  bMeat.appendChild(bMeat2);
+  bMeat.appendChild(bMeat3);
+  bMeat.appendChild(bMeat4);
 
-  const img_info_4 = document.createElement("h3");
-  img_info_4.innerText = "Meat 4";
+  bDrinks1.appendChild(imgd1);
+  bDrinks1.appendChild(imgdInfo1);
+  bDrinks2.appendChild(imgdInfo2);
+  bDrinks2.appendChild(imgd2);
+  bDrinks3.appendChild(imgd3);
+  bDrinks3.appendChild(imgdInfo3);
+  bDrinks4.appendChild(imgdInfo4);
+  bDrinks4.appendChild(imgd4);
+  bDrinks.appendChild(bDrinks1);
+  bDrinks.appendChild(bDrinks2);
+  bDrinks.appendChild(bDrinks3);
+  bDrinks.appendChild(bDrinks4);
 
-  const imgd_info_1 = document.createElement("h3");
-  imgd_info_1.innerText = "Drinks 1";
-
-  const imgd_info_2 = document.createElement("h3");
-  imgd_info_2.innerText = "Drinks 2";
-
-  const imgd_info_3 = document.createElement("h3");
-  imgd_info_3.innerText = "Drinks 3";
-
-  const imgd_info_4 = document.createElement("h3");
-  imgd_info_4.innerText = "Drinks 4";
-
-  bmeat_1.appendChild(img_1);
-  bmeat_1.appendChild(img_info_1);
-  bmeat_2.appendChild(img_info_2);
-  bmeat_2.appendChild(img_2);
-  bmeat_3.appendChild(img_3);
-  bmeat_3.appendChild(img_info_3);
-  bmeat_4.appendChild(img_info_4);
-  bmeat_4.appendChild(img_4);
-  bmeat.appendChild(bmeat_1);
-  bmeat.appendChild(bmeat_2);
-  bmeat.appendChild(bmeat_3);
-  bmeat.appendChild(bmeat_4);
-
-  bdrinks_1.appendChild(imgd_1);
-  bdrinks_1.appendChild(imgd_info_1);
-  bdrinks_2.appendChild(imgd_info_2);
-  bdrinks_2.appendChild(imgd_2);
-  bdrinks_3.appendChild(imgd_3);
-  bdrinks_3.appendChild(imgd_info_3);
-  bdrinks_4.appendChild(imgd_info_4);
-  bdrinks_4.appendChild(imgd_4);
-  bdrinks.appendChild(bdrinks_1);
-  bdrinks.appendChild(bdrinks_2);
-  bdrinks.appendChild(bdrinks_3);
-  bdrinks.appendChild(bdrinks_4);
-
-  menu.appendChild(hmeat);
-  menu.appendChild(bmeat);
-  menu.appendChild(hdrinks);
-  menu.appendChild(bdrinks);
+  menu.appendChild(hMeat);
+  menu.appendChild(bMeat);
+  menu.appendChild(hDrinks);
+  menu.appendChild(bDrinks);
 
   return menu;
 }
 
 function loadMenu() {
-  const main = document.getElementById("main");
-  main.textContent = "";
+  const main = document.getElementById('main');
+  main.textContent = '';
   main.appendChild(createMenu());
 }
 
