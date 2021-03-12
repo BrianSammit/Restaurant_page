@@ -8,7 +8,7 @@ This is a restaurant page that was created with HTML and JavasCript, The HTML ju
 
 ## Live demo
 
-[live demo]()
+[live demo](https://rawcdn.githack.com/BrianSammit/restaurant_page/ce591d6110922a65c1610c6d1c60c0b8de2617ba/dist/index.html)
 
 ## Built With
 
