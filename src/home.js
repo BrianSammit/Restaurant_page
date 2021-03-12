@@ -7,16 +7,12 @@ function createHome() {
   img.alt = "Chef";
 
   const h2 = document.createElement("h2");
-  h2.innerText = "Rapid Food";
-
-  const p = document.createElement("p");
-  p.innerText = "Happy Belly Happy Life";
+  h2.innerText = "Happy Belly Happy Life";
 
   const p2 = document.createElement("p");
   p2.innerText = "Get your favorite food and enjoy it";
 
   home.appendChild(h2);
-  home.appendChild(p);
   home.appendChild(img);
   home.appendChild(p2);
 
