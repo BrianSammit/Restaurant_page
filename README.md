@@ -1,10 +1,10 @@
 # Library
 
-This is a  restaurant page that was created with HTML and JavasCript, The HTML just contains in the body a div with an id= " content" and the whole content of the page is made with JavasCript. This project was created to learn about modularized code and how to work with modules using webpack.
+This is a restaurant page that was created with HTML and JavasCript, The HTML just contains in the body a div with an id= " content" and the whole content of the page is made with JavasCript. This project was created to learn about modularized code and how to work with modules using webpack.
 
-![screenshot]()
-![screenshot]()
-![screenshot]()
+![screenshot](screen.png)
+![screenshot](screen_2.png)
+![screenshot](screen_3.png)
 
 ## Live demo
 
