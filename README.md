@@ -1,1 +1,34 @@
-# Restaurant_page
+# Library
+
+This is a restaurant page that was created with HTML and JavasCript, The HTML just contains in the body a div with an id= " content" and the whole content of the page is made with JavasCript. This project was created to learn about modularized code and how to work with modules using webpack.
+
+![screenshot](screen.PNG)
+![screenshot](screen_2.PNG)
+![screenshot](screen_3.PNG)
+
+## Live demo
+
+[live demo](https://rawcdn.githack.com/BrianSammit/restaurant_page/ce591d6110922a65c1610c6d1c60c0b8de2617ba/dist/index.html)
+
+## Built With
+
+- JavaScript
+- HTML
+- SCSS
+
+## How to start the project from your Local enviroment
+
+- Open your terminal and cd where you want to store the project
+- Run the following command - `git clone https://github.com/BrianSammit/Restaurant_page.github.io.git`
+- Cd into the directory - `cd Restaurant_page`
+- Open the live server on your VScode `Alt + L` then `Alt + o`
+
+## Author
+
+👤 **Brian Cruz**
+
+- Github: [@githubhandle](https://github.com/BrianSammit)
+- Twitter: [@twitterhandle](https://twitter.com/cruzsammit)
+- Linkedin: [linkedin](https://www.linkedin.com/in/brian-sammit-cruz-rodriguez-5877551a8/)
+
+## 🤝 Contributing

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../dist/img/bg-food.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+
+  #content {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-bottom: 0.1px solid hsl(0, 0%, 93%);
+      padding: 2rem;
+      height: 196px;
+      width: 100%;
+
+      div {
+        display: flex;
+
+        h1 {
+          font-family: "Pacifico", cursive;
+          font-size: 5rem;
+          line-height: 38.4px;
+          color: rgb(255, 255, 255);
+        }
+
+        span {
+          font-family: "Pacifico", cursive;
+          font-size: 5rem;
+          line-height: 38.4px;
+          color: #7eca12;
+        }
+      }
+
+      nav {
+        display: flex;
+        justify-self: flex-end;
+
+        button {
+          color: #7eca12;
+          font-family: "Times New Roman", Times, serif;
+          font-size: 1.2rem;
+          margin: 0 0.5em;
+          background-color: transparent;
+          background-repeat: no-repeat;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    main {
+      padding: 20px;
+      margin: 40px;
+      width: 50%;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 0.1px solid hsl(0, 0%, 93%);
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        font-family: "Pacifico", cursive;
+        font-size: 2.5rem;
+        font-weight: 100;
+        color: white;
+      }
+
+      p {
+        font-family: "Times New Roman", Times, serif;
+        color: white;
+        font-size: 1rem;
+      }
+
+      img {
+        margin: 15px;
+        height: 20rem;
+        border-radius: 5%;
+        border: solid 1px rgb(255, 255, 255);
+      }
+
+      .about {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .menu {
+        background-image: url(../dist/img/bg-menu.jpg);
+        border-radius: 5%;
+        border: solid 1px black;
+
+        img {
+          width: 15rem;
+          height: 10rem;
+        }
+
+        h3 {
+          font-family: "Pacifico", cursive;
+          font-size: 1.5rem;
+          font-weight: 100;
+          color: white;
+        }
+
+        .body-menu {
+          display: flex;
+          width: 90%;
+
+          div {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+          }
+        }
+      }
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 50px;
+      border-top: 0.1px solid hsl(0, 0%, 93%);
+
+      p {
+        font-family: "Times New Roman", Times, serif;
+        color: white;
+      }
+    }
+  }
+}
